@@ -1,0 +1,937 @@
+:root {
+  --green-color: #66952e;
+  --blue-color: #001f3d;
+  --other-blue-color: #002b52;
+}
+
+.krona-one-regular {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  width: 100%;
+  height: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--other-blue-color);
+  position: relative;
+}
+
+#hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#hero-content {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+#hero-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#logo {
+  height: 40px;
+}
+
+#menu {
+  height: 10px;
+  margin-top: 20px;
+}
+
+#hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  gap: 7px;
+}
+
+#enquiry-btn,
+#our-project-btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px white solid;
+  outline: none;
+  color: white;
+  font-size: 9px;
+  border-radius: 35px;
+  padding: 5px 14px;
+  font-family: "Libre Caslon Text", serif;
+}
+
+#circle-btn {
+  height: 65%;
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px white solid;
+  outline: none;
+  color: white;
+  font-size: 10px;
+  border-radius: 50%;
+  font-family: "Libre Caslon Text", serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexC {
+  display: flex;
+  align-items: center;
+}
+
+#hero-bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  color: white;
+}
+
+#hero-bottom-content h1 {
+  font-family: "Krona One", sans-serif;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0);
+  letter-spacing: 2px;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+#hero-bottom-content p {
+  font-family: "Libre Caslon Text", serif;
+  width: 48%;
+  font-size: small;
+}
+
+#our-project-btn {
+  margin-top: 25px;
+  padding: 8px 30px;
+  font-size: 11px;
+  transition: all 0.3ms ease-in-out;
+  margin-bottom: 30px;
+}
+
+#our-project-btn:hover {
+  background-color: var(--green-color);
+  border: 1px solid var(--green-color);
+}
+
+/* Section2 */
+
+.section2 {
+  height: auto;
+  background-color: var(--blue-color);
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+
+#hero-extreme-bottom-container {
+  position: relative;
+  width: 150%;
+  height: 100px;
+  bottom: 0;
+  white-space: nowrap;
+  text-align: center;
+  background-color: var(--blue-color);
+  text-align: center;
+}
+
+#hero-extreme-bottom-container #top-ribbon {
+  font-family: "Krona One", sans-serif;
+  width: 100%;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  text-align: center;
+  color: white;
+  padding: 6px;
+  transform: rotateZ(1deg);
+  background-color: var(--other-blue-color); /* Added background color */
+  z-index: 5;
+}
+
+#bottom-ribbon {
+  font-family: "Krona One", sans-serif;
+  width: 100%;
+  font-size: 12px;
+  position: absolute;
+  top: 25px;
+  text-align: center;
+  color: white;
+  padding: 6px;
+  transform: rotateZ(-3deg);
+  background-color: #3f6619; /* Added background color */
+}
+
+/* about */
+
+.about {
+  padding: 20px 40px;
+}
+
+#about-top {
+  display: inline-flex;
+  color: white;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#about-img {
+  height: 40vw;
+  position: relative;
+}
+
+#about-desc-container {
+  width: 35%;
+  margin-top: 40px;
+}
+
+#about-us-heading {
+  font-family: "Krona One", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#about-desc {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+}
+
+#redefining-container {
+  word-break: break-all;
+}
+#redefining-text {
+  font-family: "Krona One", sans-serif;
+  font-size: 33px;
+  color: #66952e;
+}
+
+#redefining-below-text {
+  font-family: "Krona One", sans-serif;
+  font-size: 33px;
+  color: white;
+}
+
+#about-small-img-container {
+  position: absolute;
+  bottom: -150px; /* Position it 150px below the bottom of its containing element */
+  right: -80px; /* Position it 80px to the right of its containing element */
+  width: 180px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  overflow: hidden; /* Hide any content that overflows the container */
+}
+
+#about-small-img {
+  height: 100%; /* Ensure the image fills the container's height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: fill; /* Stretch the image to fill the container, possibly distorting its aspect ratio */
+}
+
+#about-small-img #top-small-img {
+  height: 100%; /* Ensure the contained image fills the container's height */
+}
+
+#play-btn {
+  position: absolute;
+  height: 60px;
+}
+
+.circular-text {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+.circular-text svg {
+  width: 100%;
+  height: 100%;
+}
+
+text {
+  fill: #000; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 14px; /* Font size */
+  text-anchor: middle; /* Center text horizontally */
+}
+
+/*Figures*/
+
+.figures {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 30px;
+  margin-top: 100px;
+}
+
+#figures-container {
+  width: 27%;
+  height: 130px;
+
+  border-bottom: 2px solid var(--green-color);
+}
+
+#figures-innercontainer {
+  height: 100%;
+  width: 100%;
+  background-color: #002559;
+  border-bottom: 3px solid var(--blue-color);
+  border-radius: 2px;
+  padding: 30px 20px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#number {
+  color: #66952e;
+  position: absolute;
+  align-self: center;
+  top: -20px;
+  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#happy-container {
+  width: 100%;
+  text-align: center;
+  padding: 1px 5px;
+  /* border-bottom: 1px solid var(--green-color); */
+  margin-bottom: 6px;
+}
+
+#happy-container #happy {
+  color: white;
+  font-size: 9px;
+  font-weight: 100;
+  font-family: "Krona One", sans-serif;
+}
+
+hr {
+  border: none;
+  width: 50px;
+  min-height: 1px;
+  background-color: #74cd76;
+  margin-bottom: 6px;
+}
+
+#happy-desc {
+  font-family: "Libre Caslon Text", serif;
+  color: white;
+  font-size: 8px;
+  font-weight: 100;
+  line-height: 15px;
+}
+
+/*Section 3*/
+
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section8,
+.section9,
+footer {
+  width: 100%;
+  background-color: var(--blue-color);
+}
+
+.section3 img {
+  margin-top: 50px;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+/*Section 4*/
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 55px;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 100px;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+#heading-container {
+  word-break: break-all;
+}
+#heading-bottom {
+  font-family: "Krona One", sans-serif;
+  font-size: 30px;
+  color: #66952e;
+}
+
+#heading {
+  font-family: "Krona One", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#heading-desc {
+  width: 35%;
+  font-family: "Libre Caslon Text", serif;
+  color: white;
+  font-size: 8px;
+  font-weight: 100;
+  line-height: 15px;
+  letter-spacing: 0.1px;
+}
+
+#img-main-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#img-innercontainer img {
+  height: 83vh;
+}
+
+#caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #66952e;
+  padding: 7px;
+}
+
+#caption img {
+  height: 15px;
+}
+
+#img-innercontainer p {
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-size: 10px;
+}
+
+/*Section5*/
+
+.section5 {
+  display: flex;
+  padding: 150px 55px;
+}
+
+.section5 #img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section5 #img-innercontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section5 #img-innercontainer img {
+  height: 55vh;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  text-align: right;
+}
+
+#text-container p {
+  text-align: right;
+}
+
+span {
+  color: #66952e;
+}
+
+#text-container #desc {
+  color: white;
+  font-size: 9px;
+  font-family: "Libre Caslon Text", serif;
+  width: 70%;
+  line-height: 15px;
+  margin-bottom: 20px;
+}
+
+#services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+#services-heading {
+  color: #66952e;
+  font-family: "Krona One", sans-serif;
+  margin-top: 20px;
+}
+
+#service-desc {
+  color: white;
+  font-size: 9px;
+  font-family: "Libre Caslon Text", serif;
+  width: 70%;
+  line-height: 15px;
+}
+
+/*Section 6*/
+
+.section6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section6 #desc,
+#news-desc {
+  color: white;
+  font-size: 9px;
+  font-family: "Libre Caslon Text", serif;
+  width: 60%;
+  line-height: 15px;
+  margin-bottom: 100px;
+}
+
+#people-bg-container {
+  height: 75vh;
+  width: 100vw;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  margin-bottom: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#thought-card-container {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -45px;
+  gap: 15px;
+}
+
+#thought-card {
+  width: 250px;
+  height: 230px;
+  background-color: #d9d9d9;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 27px;
+}
+
+#thought-card img {
+  width: 100%;
+}
+
+#thought-card-top {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#thought-card-top #thought-profile {
+  position: absolute;
+  bottom: -30px;
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+#thought-card-bottom {
+  text-align: center;
+  padding: 0 20px;
+}
+
+#thought-card-bottom #thought-name {
+  font-size: 8px;
+  font-weight: 600;
+  font-family: "Libre Caslon Text", serif;
+  line-height: 15px;
+  margin-top: 10px;
+}
+
+#thought-card #thought {
+  width: 100%;
+  font-size: 7.5px;
+  font-family: "Libre Caslon Text", serif;
+  line-height: 15px;
+  margin-top: 10px;
+}
+
+#prev-next-btn-container,
+#news-prev-next-btn-container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* position: relative; */
+}
+
+#prev-btn,
+#next-btn {
+  width: 35px;
+  height: 35px;
+  background-color: var(--green-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+#prev-btn {
+  left: -25px;
+}
+
+#next-btn {
+  right: -25px;
+}
+
+#prev-btn img {
+  transform: rotateY(180deg);
+}
+
+#next-btn img {
+  height: 15px;
+}
+
+#prev-btn img,
+#next-btn img {
+  height: 15px;
+}
+
+/*Section7*/
+
+#news-main-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+#news-img-container {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+}
+
+#news-prev-next-btn-container {
+  margin-bottom: 35px;
+}
+
+#news-img-container #news-img {
+  height: 280px;
+}
+
+#news-img-innercontainer {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+}
+
+#news-img-innercontainer p {
+  width: 65%;
+  position: absolute;
+  bottom: 20px;
+  font-size: 7.5px;
+  font-family: "Libre Caslon Text", serif;
+  line-height: 10px;
+  color: white;
+}
+
+/*Section8*/
+
+.section8 {
+  padding: 80px 50px 150px 50px;
+}
+
+#outlined-text {
+  -webkit-text-stroke: 0.01px #0062bb;
+  color: var(--blue-color); /* Color of the text */
+  font-size: 50px;
+  font-family: "Krona One", sans-serif;
+  stroke: 0.01px #0062bb;
+  font-weight: bolder;
+  white-space: nowrap;
+  margin-left: -400px;
+  margin-bottom: 10px;
+}
+
+#group-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+#group-img-container img {
+  height: 60px;
+}
+
+/*Section9*/
+
+#section9-main-container {
+  width: 100%;
+  background-image: url("./assets/Rectangle 152.png");
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#input-container {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#section9-main-container span {
+  font-family: "Krona One", sans-serif;
+  font-size: 11px;
+}
+
+#section9-main-container p {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 8px;
+  color: white;
+  margin-bottom: 17px;
+}
+
+#section9-main-container button {
+  background-color: #66952e;
+  color: white;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 8px;
+  padding: 8px 30px;
+  border: none;
+  outline: none;
+  border-radius: 35px;
+  margin-top: 15px;
+}
+
+#name-input,
+#email-input,
+#projects-dropdown {
+  width: calc(50% - 4px); /* 50% width with gap adjustment */
+}
+
+#country-dropdown {
+  width: calc(20% - 4px); /* 50% width with gap adjustment */
+}
+
+#phone-input {
+  width: calc(29% - 4px); /* 50% width with gap adjustment */
+}
+
+#name-input,
+#email-input,
+#country-dropdown,
+#phone-input,
+#projects-dropdown {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 35px;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 8px;
+  opacity: 0.6;
+}
+
+.section9 #bottom-container {
+  height: 60px;
+  background-color: var(--green-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#bottom-container-text h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+#bottom-container-text p {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 8px;
+}
+
+#bottom-input-container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 6px 18px 6px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 35px;
+}
+
+#bottom-input-container input {
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+
+  color: white;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 10px;
+  position: relative;
+}
+
+#bottom-input-container img {
+  height: 15px;
+}
+
+#bottom-container input::placeholder {
+  color: white;
+}
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+}
+
+#footer-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+#links-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  text-align: start;
+}
+
+#links p,
+#contact #heading {
+  color: var(--green-color);
+  font-family: "Krona One", sans-serif;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+#links li,
+#links a,
+#contact #address,
+#contact-email,
+#contact-num,
+#copyright {
+  list-style: none;
+  color: white;
+  font-size: 8px;
+  font-family: "Libre Caslon Text", serif;
+  line-height: 15px;
+  text-decoration: none;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: start;
+}
+
+#contact {
+  display: flex;
+
+  flex-direction: column;
+  align-items: end;
+}
+
+#contact #address,
+#contact #heading {
+  width: 40%;
+  text-align: end;
+}
+
+#copyright {
+}
